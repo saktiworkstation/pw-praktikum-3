@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Confirm - Kotak Dialog</title>
+
+    <head>
+
+    <body>
+        <script language="JavaScript">
+            function ckMarital() {
+                if (confirm("Apakah anda benar-benar sudah menikah?")) {
+                    document.getElementById("ckStatus").checked = true;
+                } else {
+                    document.getElementById("ckStatus").checked = false;
+                }
+            }
+        </script>
+        <form action="" method="post">
+            Sudah Menikah? :
+            <input type="checkbox" name="ckStatus" id="ckStatus" onClick="ckMarital()" /> Ya
+
+        </form>
+    </body>
+
+</html>
